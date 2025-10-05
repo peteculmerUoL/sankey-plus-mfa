@@ -96,7 +96,7 @@
           virtualPadding: 7,
           sort: null,
           setPositions: false,
-		  nodeScale: 0.8
+		  nodeScale: 0.5
         },
         links: {
           data: links,

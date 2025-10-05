@@ -28,7 +28,7 @@ config.height = height;
 config.nodes.data = data.nodes;
 config.links.data = data.links;
 config.useManualScale = true;
-config.nodes.nodeScale = 0.2;
+config.nodes.nodeScale = 0.1;
 
 /**
  * Create Sankey Chart

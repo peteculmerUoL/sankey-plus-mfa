@@ -5,8 +5,9 @@ export function adjustSankeySize(
   useManualScale,
   nodePadding,
   nodeWidth,
-  scaleDomain,
-  scaleRange,
+  nodeScale,
+  scaleDomain, //REMOVE - unused
+  scaleRange, //REMOVE - unused
   circularLinkPortionTopBottom,
   circularLinkPortionLeftRight,
   scale,
@@ -42,9 +43,14 @@ export function adjustSankeySize(
 
     let ky1 = (graph.y1 - graph.y0) / maxColumnSum;
 
-    //calculate the widths of the links
-    graph.ky = ky * scale;
-
+    //calculate the widths of the links NEW Include option for manualScale
+    if (useManualScale) {
+		graph.ky = nodeScale; //0.5; //Fix scale to specified factor
+	}
+	else {
+		graph.ky = ky * scale; // Auto-adjust scale to fit contents (Default)
+	}
+  
     graph.links.forEach(function (link) {
       link.width = link.value * graph.ky;
     });

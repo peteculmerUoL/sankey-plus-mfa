@@ -930,7 +930,8 @@ class SankeyChart {
         padding: 25,
         minPadding: 25,
         virtualPadding: 7,
-        horizontalSort: null,
+        nodeScale: 0.2, // Fallback manual nodeScale (if none provided)
+		horizontalSort: null,
         verticalSort: null,
         setPositions: false,
         fill: "grey",
@@ -1016,8 +1017,9 @@ class SankeyChart {
       this.config.nodes.padding,
       this.config.nodes.width,
       //this.config.nodes.maxHeight,
-      this.config.nodes.scaleDomain,
-      this.config.nodes.scaleRange,
+      this.config.nodes.nodeScale,
+	  this.config.nodes.scaleDomain, //remove this??
+      this.config.nodes.scaleRange, //remove this??
       this.config.links.circularLinkPortionTopBottom,
       this.config.links.circularLinkPortionLeftRight,
       this.config.scale,
