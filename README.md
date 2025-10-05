@@ -9,7 +9,11 @@
  Future work will integrate updates from the original where possible.
  With thanks and recognition to the excellent original Sankey-Plus library - hopefully this work could be merged back in the future
 
-***NOT READY FOR USE YET - CONTAINS BUGS :)***
+
+**************************
+Original Readme info below
+
+**************************
 
 A JavaScript library for computing and drawing Sankey graphs.
 
@@ -111,4 +115,5 @@ let config = {
 | gap   | Length of the gap between each arrow, in pixels        | 25        | No        |
 
 | headSize   | width of the arrow head, in pixels        | 4        | No        |
+
 
