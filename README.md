@@ -1,6 +1,19 @@
-# sankey-plus
+# Sankey-Plus-MFA
 
-***NOT READY FOR USE YET - CONTAINS BUGS :)***
+ A modification of the working version (0.6) of Sankey-Plus - particularly for Material Flow Analyses.
+ 
+ (See original readme below)
+ 
+ 
+ Not officially branched from the original's github because this has updates which have broken it (for me at least).
+ Future work will integrate updates from the original where possible.
+ With thanks and recognition to the excellent original Sankey-Plus library - hopefully this work could be merged back in the future
+
+
+**************************
+Original Readme info below
+
+**************************
 
 A JavaScript library for computing and drawing Sankey graphs.
 
@@ -100,4 +113,7 @@ let config = {
 | color   | Color of the arrow. Can use Hex code or CSS color name       | DarkSlateGrey        | No        |
 | length   | Length of the arrow, in pixels        | 10        | No        |
 | gap   | Length of the gap between each arrow, in pixels        | 25        | No        |
+
 | headSize   | width of the arrow head, in pixels        | 4        | No        |
+
+
